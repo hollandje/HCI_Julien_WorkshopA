@@ -18,7 +18,6 @@
       <a-camera>
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 1500">
-          <img src="images/cursor.png">
         </a-entity>
         <a-ring id="cursorRing" 
           position="0 0 -1"
@@ -26,6 +25,40 @@
           radius-outer= "0.03"
           material="color: red; shader: flat">
         </a-ring>
+        <a-ring id="cursorRing2" 
+          position="0 0 -1"
+          radius-inner= "0.05"
+          radius-outer= "0.06"
+          material="color: red; shader: flat">
+        </a-ring>
+        <a-box id="cursorbox" 
+          position="0 0.04 -1"
+          height="0.03"
+          width="0.01"
+          depth="0.01"
+          material="color: red; shader: flat">
+        </a-box>
+        <a-box id="cursorbox2" 
+          position="0 -0.04 -1"
+          height="0.03"
+          width="0.01"
+          depth="0.01"
+          material="color: red; shader: flat">
+        </a-box>
+        <a-box id="cursorbox3" 
+          position="0.04 0 -1"
+          height="0.01"
+          width="0.03"
+          depth="0.01"
+          material="color: red; shader: flat">
+        </a-box>
+        <a-box id="cursorbox4" 
+          position="-.04 0 -1"
+          height="0.01"
+          width="0.03"
+          depth="0.01"
+          material="color: red; shader: flat">
+        </a-box>
       </a-camera>
       
       <a-box id="myBox" 
