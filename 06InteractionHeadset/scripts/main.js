@@ -30,6 +30,7 @@ myOtherBox.addEventListener('mouseleave', function(){
 
  var growspeed = 1.2;
 
+
  function grow(){
  	myOtherBox.object3D.scale.x *= growspeed;
  	myOtherBox.object3D.scale.y *= growspeed;
@@ -41,3 +42,25 @@ myOtherBox.addEventListener('mouseleave', function(){
  	grow();
  	console.log('grew');
  });
+
+/* my box */
+
+var multiplier = 2.5
+
+function increase(){
+	killBox.object3D.scale.x *= multiplier;
+ 	killBox.object3D.scale.y *= multiplier;
+ 	killBox.object3D.scale.z *= multiplier;
+}
+
+function decrease(){
+	killBox.object3D.scale.x /= multiplier;
+ 	killBox.object3D.scale.y /= multiplier;
+ 	killBox.object3D.scale.z /= multiplier;
+}
+
+killBox.addEventListener('click', function(){
+	console.log('box');
+	increase();
+});
+
