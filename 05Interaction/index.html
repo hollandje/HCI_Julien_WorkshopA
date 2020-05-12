@@ -25,13 +25,13 @@
         depth="1" 
         material="src: #wood"
         shadow 
-        animation__mouseenter="
+        animation__touchstart="
           property: components.material.material.color; 
           type: color; 
           to: blue; 
           startEvents: mouseenter; 
           dur: 500;"
-        animation__mouseleave="
+        animation__touchend="
           property: components.material.material.color; 
           type: color; 
           to: red; 
