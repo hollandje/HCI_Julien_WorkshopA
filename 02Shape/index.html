@@ -10,9 +10,9 @@
   <body>
     <a-scene background="color: #333333">
       <a-plane id="myplane"
-        width="3"
-        height="3"
-        color="#666"
+        width="8"
+        height="8"
+        color="#5a8c67"
         position="0 1 -2"
         rotation="-90 90 90" 
         shadow>
@@ -21,37 +21,36 @@
         width="0.5"
         height="0.5"
         depth="0.5"
-        color="#888"
+        color="#5a718c"
         position="0 1.25 -2"
         rotation="0 45 0"
         shadow>
         </a-box>
         <a-sphere id="mysphere"
-        width="1"
-        height="1"
-        color="#888"
-        position="0 1.25 -2"
+        width="0.2"
+        height="0.2"
+        radius="0.2"
+        color="#895a8c"
+        position="0.5 1.25 -1"
         rotation="0 45 0"
         shadow>
         </a-sphere>
-        <a-cylinder id="myCylinder"
-        width="0.1"
-        height="0.1"
-        depth="0.1"
-        color="#888"
+        <a-torus-knot id="mytorus-knot"
+        width="3"
+        height="3"
+        radius="5"
+        color="#8c875a"
         position="1 1.5 -2"
         rotate="0 45 0"
         shadow>
-        </a-cylinder>
-        <a-dodecahedron id="mydodecahedron"
-        width="1"
+        </a-torus-knot>
+        <a-cylinder id="mycylinder"
+        radius="0.2"
         height="1"
-        depth="1"
-        color="#888"
+        color="#8c5a5a"
         position="-1 1.5 -2"
-        rotate="0 45 0"
         shadow>
-        </a-dodecahedron>
+        </a-cylinder>
         </a-scene>
   </body>
 </html>
