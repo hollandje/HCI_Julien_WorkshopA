@@ -9,13 +9,49 @@
   </head>
   <body>
     <a-scene background="color: #333333">
+      <a-plane id="myplane"
+        width="3"
+        height="3"
+        color="#666"
+        position="0 1 -2"
+        rotation="-90 90 90" 
+        shadow>
+        </a-plane>
       <a-box id="myBox"
+        width="0.5"
+        height="0.5"
+        depth="0.5"
+        color="#888"
+        position="0 1.25 -2"
+        rotation="0 45 0"
+        shadow>
+        </a-box>
+        <a-sphere id="mysphere"
+        width="1"
+        height="1"
+        color="#888"
+        position="0 1.25 -2"
+        rotation="0 45 0"
+        shadow>
+        </a-sphere>
+        <a-cylinder id="myCylinder"
+        width="0.1"
+        height="0.1"
+        depth="0.1"
+        color="#888"
+        position="1 1.5 -2"
+        rotate="0 45 0"
+        shadow>
+        </a-cylinder>
+        <a-dodecahedron id="mydodecahedron"
         width="1"
         height="1"
         depth="1"
-        color="black" 
+        color="#888"
+        position="-1 1.5 -2"
+        rotate="0 45 0"
         shadow>
-      </a-box>
-    </a-scene>
+        </a-dodecahedron>
+        </a-scene>
   </body>
 </html>
